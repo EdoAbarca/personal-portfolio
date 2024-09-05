@@ -1,11 +1,26 @@
 import React from 'react';
 
 const skills = [
-  { name: 'Python', icon: '🐍' },
+  { name: 'HTML', icon: '🐍' },
+  { name: 'CSS', icon: '🟨' },
   { name: 'JavaScript', icon: '🟨' },
-  { name: 'React', icon: '⚛️' },
+  { name: 'React.js', icon: '⚛️' },
   { name: 'Tailwind CSS', icon: '💨' },
-  // Add more skills here
+  { name: 'Node.js', icon: '🟢' },
+  { name: 'Figma', icon: '🎨' },
+  { name: 'LucidChart', icon: '🎨' },
+  { name: 'Python', icon: '🐍' },
+  { name: 'Django', icon: '🐍' },
+  { name: 'TypeScript', icon: '🐍' },
+  { name: 'Nest.js', icon: '🐍' },
+  { name: 'PHP', icon: '🐍' },
+  { name: 'Laravel', icon: '🐍' },
+  { name: 'Java', icon: '🐍' },
+  { name: 'SpringBoot', icon: '🐍' },
+  { name: 'PostgreSQL', icon: '🐍' },
+  { name: 'MongoDB', icon: '🐍' },
+  { name: 'Docker', icon: '🐍' },
+  { name: 'GitHub Copilot', icon: '🐍' },
 ];
 
 function Knowledge() {
