@@ -1,3 +1,4 @@
+"use client";
 import { Icon } from '@iconify-icon/react';
 
 const Hero = () => {
@@ -63,14 +64,14 @@ const Hero = () => {
         <div className="relative">
           <div className="aspect-square overflow-hidden rounded-full border-4 border-gray-100 shadow-xl">
             <img 
-              src="764164_de03_5.jpg" 
+              src="perfil_of_og.jpg" 
               alt="Eduardo's profile" 
               className="w-full h-full object-cover"
             />
           </div>
           {/* Decorative background element */}
           <div className="absolute -z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
-                        w-[110%] h-[110%] bg-gradient-to-r from-indigo-100 to-purple-100 rounded-full 
+                        w-full h-full bg-gradient-to-r from-indigo-100 to-purple-100 rounded-full 
                         opacity-50 blur-xl">
           </div>
         </div>
