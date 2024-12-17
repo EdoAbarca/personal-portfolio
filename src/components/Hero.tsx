@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from '@iconify-icon/react';
 
 const Hero = () => {
   return (
@@ -11,7 +10,7 @@ const Hero = () => {
           {/* Available for work badge */}
           <span className="inline-flex items-center px-3 py-1 text-sm font-medium text-green-700 bg-green-100 
                          rounded-full shadow-sm">
-            <FontAwesomeIcon icon={faCheck} className="h-4 w-4 mr-2" />
+            <Icon icon="ic:round-check" className="h-4 w-4 mr-2" />
             Available for hire
           </span>
 
@@ -55,7 +54,7 @@ const Hero = () => {
                      bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-xl 
                      transition duration-150 ease-in-out"
           >
-            <FontAwesomeIcon icon={faDownload} className="h-5 w-5 mr-2" />
+            <Icon icon="material-symbols:download-rounded" className="h-5 w-5 mr-2" />
             Download CV
           </button>
         </div>

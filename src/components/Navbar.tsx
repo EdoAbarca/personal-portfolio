@@ -1,12 +1,5 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import {
-  faHome,
-  faInfoCircle,
-  faTools,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { Icon } from '@iconify-icon/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,21 +20,21 @@ const Navbar = () => {
               href="#"
               className="flex items-center rounded-2xl px-2 py-1 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-500"
             >
-              <FontAwesomeIcon icon={faHome} className="h-4 w-4 mr-1" />
+              <Icon icon="ic:outline-home" className="h-4 w-4 mr-1" />
               Home
             </a>
             <a
               href="#"
               className="flex items-center rounded-2xl px-2 py-1 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-500"
             >
-              <FontAwesomeIcon icon={faInfoCircle} className="h-4 w-4 mr-1" />
+              <Icon icon="mynaui:info-circle" className="h-4 w-4 mr-1" />
               About
             </a>
             <a
               href="#"
               className="flex items-center rounded-2xl px-2 py-1 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-500"
             >
-              <FontAwesomeIcon icon={faTools} className="h-4 w-4 mr-1" />
+              <Icon icon="ri:tools-fill" className="h-4 w-4 mr-1" />
               Services
             </a>
           </div>
@@ -51,7 +44,7 @@ const Navbar = () => {
               href="#"
               className="flex items-center rounded-2xl px-2 py-1 text-gray-700 hover:bg-blue-600 hover:text-white transition ease-in-out duration-300"
             >
-              <FontAwesomeIcon icon={faEnvelope} className="h-4 w-4 mr-1" />
+              <Icon icon="lucide:contact-round" className="h-4 w-4 mr-1" />
               Contact
             </a>
           </div>
@@ -63,8 +56,8 @@ const Navbar = () => {
               className="p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-xl"
               aria-expanded={isOpen}
             >
-              <FontAwesomeIcon
-                icon={isOpen ? faXmark : faBars}
+              <Icon
+                icon={isOpen ? "raphael:cross" : "icon-park:hamburger-button"}
                 className="h-6 w-6"
               />
             </button>
@@ -85,28 +78,28 @@ const Navbar = () => {
             href="#"
             className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center"
           >
-            <FontAwesomeIcon icon={faHome} className="h-4 w-4 mr-2" />
+            <Icon icon="ic:outline-home" className="h-4 w-4 mr-2" />
             Home
           </a>
           <a
             href="#"
             className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center"
           >
-            <FontAwesomeIcon icon={faInfoCircle} className="h-4 w-4 mr-2" />
+            <Icon icon="mynaui:info-circle" className="h-4 w-4 mr-2" />
             About
           </a>
           <a
             href="#"
             className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center"
           >
-            <FontAwesomeIcon icon={faTools} className="h-4 w-4 mr-2" />
+            <Icon icon="ri:tools-fill" className="h-4 w-4 mr-2" />
             Services
           </a>
           <a
             href="#"
             className="px-4 py-2 text-gray-700 hover:bg-gray-100 flex items-center"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="h-4 w-4 mr-2" />
+            <Icon icon="lucide:contact-round" className="h-4 w-4 mr-2" />
             Contact
           </a>
         </div>

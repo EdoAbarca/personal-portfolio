@@ -1,4 +1,12 @@
-const ProjectCard = ({ name, img, description, tech, url }) => {
+interface ProjectCardProps {
+  name: string;
+  img: string;
+  description: string;
+  tech: string[];
+  url: string;
+}
+
+const ProjectCard = ({ name, img, description, tech, url }: ProjectCardProps) => {
     return (
       <div className="bg-zinc-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex overflow-hidden">
         {/* Image Section */}
