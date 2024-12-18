@@ -4,7 +4,6 @@ const Footer = () => {
     
     // Define footer sections for better organization
     const quickLinks = [
-      { name: 'Home', url: '#' },
       { name: 'About', url: '#about' },
 			{ name: 'Knowledge', url: '#knowledge'},
       { name: 'Projects', url: '#projects' },
@@ -74,7 +73,7 @@ const Footer = () => {
             <div className="flex justify-center space-y-4 md:space-y-0">
               {/* Copyright text */}
               <p className="align-middle text-sm">
-                © {currentYear} Eduardo Abarca. All rights reserved.
+                © {currentYear} Eduardo Abarca
               </p>
               
             </div>

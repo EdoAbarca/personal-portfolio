@@ -3,7 +3,7 @@ import { Icon } from '@iconify-icon/react';
 
 const Hero = () => {
   return (
-    <section className="container mx-auto px-4 py-16 min-h-screen flex items-center">
+    <section id='about' className="container mx-auto px-4 py-16 min-h-screen flex items-center">
       {/* Main grid container */}
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Left column - Text content */}

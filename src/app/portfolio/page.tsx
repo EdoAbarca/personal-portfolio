@@ -1,9 +1,9 @@
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
-import Knowledge from "@/components/Grid"
+import Knowledge from "@/components/Knowledge"
 import Hero from "@/components/Hero"
 import Navbar from "@/components/Navbar"
-import Project from "@/components/Project"
+import Projects from "@/components/Projects"
 
 const page = () => {
 	return (
@@ -12,7 +12,7 @@ const page = () => {
 			<main>
 				<Hero />
 				<Knowledge />
-				<Project />
+				<Projects />
 				<Contact />
 			</main>
 			<Footer />

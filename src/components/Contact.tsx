@@ -3,31 +3,31 @@ import { Icon } from '@iconify-icon/react';
 const Contact = () => {
   const socialLinks = [
     {
-      "icon": "logos:whatsapp",
-      "width": 48,
-      "height": 48,
+      "icon": "logos:whatsapp-icon",
+      "width": 36,
+      "height": 36,
       "name": "WhatsApp*",
-      "url": "https://wa.me/yournumber",
+      "url": "https://wa.me/yournumber", //Finish
       "bgColor": "bg-green-100",
       "hoverColor": "hover:bg-green-200",
       "textColor": "text-green-700"
     },
     {
       "icon": "skill-icons:linkedin",
-      "width": 48,
-      "height": 48,
+      "width": 36,
+      "height": 36,
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/yourprofile",
+      "url": "https://linkedin.com/in/yourprofile", //Finish
       "bgColor": "bg-blue-100",
       "hoverColor": "hover:bg-blue-200",
       "textColor": "text-blue-700"
     },
     {
       "icon": "logos:google-gmail",
-      "width": 48,
-      "height": 48,
+      "width": 36,
+      "height": 36,
       "name": "Gmail",
-      "url": "mailto:your.email@gmail.com",
+      "url": "mailto:your.email@gmail.com", //Finish
       "bgColor": "bg-red-100",
       "hoverColor": "hover:bg-red-200",
       "textColor": "text-red-700"
@@ -35,30 +35,30 @@ const Contact = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-16">
+    <section id='contact' className="container mx-auto px-4 py-16">
       {/* Header section with title and description */}
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">
           Contact me
         </h2>
         <p className="text-lg text-gray-600">
-          Let's get in touch! Here are my main contact sources:
+          Let's get in touch! These are my main contact sources:
         </p>
       </div>
 
-      {/* Social links grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-8">
+      {/* Contacts grid */}
+      <div className="grid grid-cols-1 max-w-[176] md:grid-cols-3 md:max-w-xl gap-6 mx-auto my-12">
         {socialLinks.map((social, index) => (
           <a
             key={index}
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex flex-col items-center p-6 rounded-lg ${social.bgColor} 
+            className={`flex flex-row items-center p-4 rounded-full ${social.bgColor} 
                       ${social.hoverColor} transition duration-300 ease-in-out 
                       transform hover:-translate-y-1`}
           >
-            <div className="mb-3">
+            <div className="mr-4"> {/* Every icon needs it's custom margin, gotta fix that */}
               <Icon
                 icon={social.icon}
                 width={social.width}
@@ -72,10 +72,10 @@ const Contact = () => {
         ))}
       </div>
 
-      {/* Note about contact preference */}
+      {/* Note */}
       <div className="text-center">
         <p className="text-sm text-gray-500 italic">
-          *: Don't call me; Instead, send me a message. Thank you in advance!
+          *: Prefer sending a message over a call. Thank you in advance!
         </p>
       </div>
     </section>

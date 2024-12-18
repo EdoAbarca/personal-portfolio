@@ -6,9 +6,10 @@ interface ProjectCardProps {
   url: string;
 }
 
+//Card dimension is too big over 1080p, gotta fix that
 const ProjectCard = ({ name, img, description, tech, url }: ProjectCardProps) => {
     return (
-      <div className="bg-zinc-50 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex overflow-hidden">
+      <div className="bg-zinc-50 rounded-se-2xl rounded-es-2xl shadow-md hover:shadow-lg transition-shadow duration-300 flex overflow-hidden">
         {/* Image Section */}
         <div className="w-1/3">
           <img
