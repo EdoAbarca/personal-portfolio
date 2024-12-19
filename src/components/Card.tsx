@@ -22,13 +22,13 @@ const ProjectCard = ({ name, img, description, tech, url }: ProjectCardProps) =>
         {/* Content Section */}
         <div className="w-2/3 p-6 flex flex-col justify-between">
           <div>
-            <h2 className="text-2xl font-bold mb-2 text-red-500">{name}</h2>
+            <h2 className="text-2xl font-bold mb-2 text-zinc-900">{name}</h2>
             <p className="text-zinc-600 mb-4">{description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {tech.map((item, index) => (
                 <span
                   key={index}
-                  className="bg-red-100 text-red-600 text-xs py-1 px-2 rounded"
+                  className="bg-zinc-100 text-zinc-600 text-xs py-1 px-2 rounded"
                 >
                   {item}
                 </span>
@@ -40,7 +40,7 @@ const ProjectCard = ({ name, img, description, tech, url }: ProjectCardProps) =>
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-500 hover:text-red-600 transition-colors duration-200 font-semibold"
+              className="text-zinc-500 hover:text-zinc-600 transition-colors duration-200 font-semibold"
             >
               View Code →
             </a>

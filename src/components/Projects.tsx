@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <section id='projects' className="min-h-screen py-12 bg-white text-zinc-900">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-center text-red-500">Projects</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center text-zinc-600">Projects</h1>
         <div className="grid grid-cols-1 gap-8">
           {projects.map((project, index) => (
             <ProjectCard
