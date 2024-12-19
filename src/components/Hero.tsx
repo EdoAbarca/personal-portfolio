@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="grid md:grid-cols-2 gap-8 items-center">
         {/* Left column - Text content */}
         <div className="space-y-6">
-          {/* Available for work badge */}
+          {/* Available for hire badge */}
           <span className="inline-flex items-center px-3 py-1 text-sm font-medium text-green-700 bg-green-100 
                          rounded-full shadow-sm">
             <Icon icon="ic:round-check" className="h-4 w-4 mr-2" />
@@ -50,7 +50,7 @@ const Hero = () => {
 
           {/* CTA Button */}
           <button 
-            onClick={() => window.open('/path-to-your-cv.pdf')}
+            onClick={() => window.open('/EduardoAbarcaCV.pdf')}
             className="inline-flex items-center px-6 py-3 text-base font-medium text-white 
                      bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-xl 
                      transition duration-150 ease-in-out"

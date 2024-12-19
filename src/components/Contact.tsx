@@ -7,7 +7,7 @@ const Contact = () => {
       "width": 36,
       "height": 36,
       "name": "WhatsApp*",
-      "url": "https://wa.me/yournumber", //Finish
+      "url": "https://wa.me/+56953118991",
       "bgColor": "bg-green-100",
       "hoverColor": "hover:bg-green-200",
       "textColor": "text-green-700"
@@ -17,7 +17,7 @@ const Contact = () => {
       "width": 36,
       "height": 36,
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/yourprofile", //Finish
+      "url": "https://www.linkedin.com/in/eduardo-abarca-chavez-01374a324/", //Finish
       "bgColor": "bg-blue-100",
       "hoverColor": "hover:bg-blue-200",
       "textColor": "text-blue-700"
@@ -27,7 +27,7 @@ const Contact = () => {
       "width": 36,
       "height": 36,
       "name": "Gmail",
-      "url": "mailto:your.email@gmail.com", //Finish
+      "url": "mailto:eduardo.abarca.c@usach.cl", //Finish
       "bgColor": "bg-red-100",
       "hoverColor": "hover:bg-red-200",
       "textColor": "text-red-700"
