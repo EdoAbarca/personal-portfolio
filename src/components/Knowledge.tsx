@@ -165,7 +165,7 @@ const Knowledge = () => {
         {knowledgeList.map((tech, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm 
+            className="flex flex-col items-center p-4 bg-white rounded-xl shadow-sm 
                      hover:shadow-md transition-shadow duration-300 border border-gray-100"
           >
             <Icon

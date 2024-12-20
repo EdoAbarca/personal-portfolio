@@ -9,7 +9,7 @@ const page = () => {
 	return (
 		<>
 			<Navbar />
-			<main>
+			<main className="container mx-auto max-w-6xl px-4">
 				<Hero />
 				<Knowledge />
 				<Projects />

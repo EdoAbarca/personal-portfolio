@@ -3,32 +3,35 @@ import ProjectCard from "./Card";
 const Projects = () => {
   const projects = [
     {
-      name: "Portfolio Website",
+      name: "PoC AI Detector",
       img: "https://via.placeholder.com/300",
-      description: "A personal portfolio website to showcase my skills and projects.",
-      tech: ["React", "Tailwind CSS", "Vite"],
-      url: "https://github.com/username/portfolio",
+      description: "An application to detect AI-generated text through file-based evaluation-focused documents.",
+      tech: ["React", "Tailwind CSS", "Vite", "Django", "PostgreSQL"],
+      githubUrl: "https://github.com/EdoAbarca/PlataformaIA",
+      demoUrl: "#"
     },
     {
-      name: "Task Manager",
+      name: "Rotativa Myra",
       img: "https://via.placeholder.com/300",
-      description: "A task management app with drag-and-drop features.",
-      tech: ["Nest.js", "React", "MongoDB"],
-      url: "https://github.com/username/task-manager",
+      description: "An application to calculate employees payments in MyraSalud company, fixed to unattended shifts, holidays, extra hours and licenses.",
+      tech: ["Nuxt.js", "Django", "PostgreSQL"],
+      githubUrl: "https://github.com/EdoAbarca/RotativaMyra",
+      demoUrl: "#"
     },
     {
-      name: "E-commerce Platform",
+      name: "Textifying Speaking",
       img: "https://via.placeholder.com/300",
-      description: "An e-commerce platform with product listing and cart features.",
-      tech: ["Next.js", "Tailwind CSS", "Stripe"],
-      url: "https://github.com/username/ecommerce-platform",
+      description: "An application to perform speech-to-text tasks over audio-based files.",
+      tech: ["React", "Tailwind CSS", "Django", "Nest.js", "MongoDB"],
+      githubUrl: "https://github.com/EdoAbarca/textifying-speaking",
+      demoUrl: "#"
     },
   ];
 
   return (
     <section id='projects' className="min-h-screen py-12 bg-white text-zinc-900">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-center text-zinc-600">Projects</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center text-gray-900">Projects</h1>
         <div className="grid grid-cols-1 gap-8">
           {projects.map((project, index) => (
             <ProjectCard
@@ -37,7 +40,8 @@ const Projects = () => {
               img={project.img}
               description={project.description}
               tech={project.tech}
-              url={project.url}
+              githubUrl={project.githubUrl}
+              demoUrl={project.demoUrl}
             />
           ))}
         </div>

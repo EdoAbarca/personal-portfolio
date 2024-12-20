@@ -11,10 +11,10 @@ const Footer = () => {
     ];
   
     const socialLinks = [
-      { name: 'GitHub', url: 'https://github.com/yourusername' },
-      { name: 'LinkedIn', url: 'https://linkedin.com/in/yourprofile' },
-      { name: 'Gmail', url: 'https://twitter.com/yourhandle' },
-			{ name: 'WhatsApp', url: 'soon'}
+      { name: 'GitHub', url: 'https://github.com/EdoAbarca' },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/eduardo-abarca-chavez-01374a324/' },
+      { name: 'Gmail', url: 'mailto:eduardo.abarca.c@usach.cl' },
+			{ name: 'WhatsApp', url: 'https://wa.me/+56953118991'}
     ];
   
     return (

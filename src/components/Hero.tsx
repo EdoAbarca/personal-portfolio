@@ -52,7 +52,7 @@ const Hero = () => {
           <button 
             onClick={() => window.open('/EduardoAbarcaCV.pdf')}
             className="inline-flex items-center px-6 py-3 text-base font-medium text-white 
-                     bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-xl 
+                     bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xl 
                      transition duration-150 ease-in-out"
           >
             <Icon icon="material-symbols:download-rounded" className="h-5 w-5 mr-2" />
