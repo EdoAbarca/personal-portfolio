@@ -1,5 +1,6 @@
 "use client";
 import { Icon } from '@iconify-icon/react';
+//import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
             Passionate about creating impactful web solutions that combine elegant design 
             with robust functionality. With expertise in both front-end and back-end development, 
             I transform complex problems into intuitive, user-friendly applications. 
-            Let's work together to bring your digital vision to life.
+            Let&apos;s work together to bring your digital vision to life.
           </p>
 
           {/* Key metrics */}

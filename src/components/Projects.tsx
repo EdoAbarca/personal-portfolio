@@ -5,7 +5,7 @@ const Projects = () => {
     {
       name: "PoC AI Detector",
       img: "https://via.placeholder.com/300",
-      description: "An application to detect AI-generated text through file-based evaluation-focused documents.",
+      description: "An application to detect AI-generated text in file-based evaluation-focused documents.",
       tech: ["React", "Tailwind CSS", "Vite", "Django", "PostgreSQL"],
       githubUrl: "https://github.com/EdoAbarca/PlataformaIA",
       demoUrl: "#"

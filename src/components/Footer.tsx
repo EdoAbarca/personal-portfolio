@@ -27,7 +27,7 @@ const Footer = () => {
               <h3 className="text-xl font-semibold text-white">Eduardo Abarca</h3>
               <p className="text-sm leading-relaxed">
                 Crafting digital experiences through innovative web development solutions.
-                Let's build something amazing together.
+                Let&apos;s build something amazing together.
               </p>
             </div>
   

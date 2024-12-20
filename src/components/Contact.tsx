@@ -40,7 +40,7 @@ const Contact = () => {
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Contact me</h2>
         <p className="text-lg text-gray-600">
-          Let's get in touch! These are my main contact sources:
+          Let&apos;s get in touch! These are my main contact sources:
         </p>
       </div>
 
