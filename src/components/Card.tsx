@@ -50,9 +50,9 @@ const ProjectCard = ({ name, img, description, tech, githubUrl, demoUrl }: Proje
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-zinc-500 hover:text-zinc-600 transition-colors duration-200 font-semibold"
+            className={`text-zinc-500 hover:text-zinc-600 transition-colors duration-200 font-semibold ${githubUrl === "#" ? "disabled-link" : ""}`}
           >
-            View Code →
+            {githubUrl === "#" ? "Code currently unavailable" : "View Code →"}
           </a>
         </div>
       </div>
