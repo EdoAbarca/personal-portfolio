@@ -27,7 +27,7 @@ const Contact = () => {
       width: 36,
       height: 36,
       name: "Gmail",
-      url: "mailto:eduardo.abarca.c@usach.cl",
+      url: "https://mail.google.com/mail/?view=cm&fs=1&to=eduardo.abarca.c@usach.cl",
       bgColor: "bg-red-100",
       hoverColor: "hover:bg-red-200",
       textColor: "text-red-700",

@@ -13,7 +13,7 @@ const Footer = () => {
     const socialLinks = [
       { name: 'GitHub', url: 'https://github.com/EdoAbarca' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/eduardo-abarca-chavez-01374a324/' },
-      { name: 'Gmail', url: 'mailto:eduardo.abarca.c@usach.cl' },
+      { name: 'Gmail', url: "https://mail.google.com/mail/?view=cm&fs=1&to=eduardo.abarca.c@usach.cl", },
 			{ name: 'WhatsApp', url: 'https://wa.me/+56953118991'}
     ];
   
@@ -25,9 +25,8 @@ const Footer = () => {
             {/* Brand section */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-white">Eduardo Abarca</h3>
-              <p className="text-sm leading-relaxed">{/* Crafting digital experiences through innovative web development solutions.
-                Let&apos;s build something amazing together. */}
-                This website shows an initial version of a portfolio, and was deployed for testing purposes. It&apos;s still under development.
+              <p className="text-sm leading-relaxed">
+                Let&apos;s build something amazing together!
               </p>
             </div>
   
