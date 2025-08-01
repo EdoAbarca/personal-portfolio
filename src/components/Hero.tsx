@@ -49,8 +49,8 @@ const Hero: React.FC<HeroProps> = ({ heroData }) => {
           <button 
             onClick={() => window.open(heroData.linktoCV)} 
             className="inline-flex items-center px-6 py-3 text-base font-medium text-white 
-                     bg-blue-600 hover:bg-blue-700 rounded-xl shadow-xl 
-                     transition duration-150 ease-in-out"
+                     bg-blue-600 hover:bg-blue-700 rounded-full shadow-xl 
+                     transition duration-300 ease-in-out"
           >
             <Icon icon="material-symbols:download-rounded" className="h-5 w-5 mr-2" />
             Download CV
