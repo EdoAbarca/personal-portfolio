@@ -56,7 +56,7 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
         <div className="absolute right-4 md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 bg-white/30 backdrop-blur-md rounded-full shadow-lg focus:outline-none border"
+            className="p-2 bg-white/30 backdrop-blur-md rounded-full shadow-lg focus:outline-none border border-white/20"
             aria-expanded={isOpen}
           >
             <Icon
@@ -67,12 +67,12 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-2 bg-white/30 backdrop-blur-md rounded-full shadow-xl p-1 mx-auto border">
+        <div className="hidden md:flex items-center space-x-2 bg-white/30 backdrop-blur-md rounded-full shadow-xl p-1 mx-auto border border-white/20">
           {menuItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className={`flex items-center rounded-full px-3 py-1 transition ease-in-out duration-500 ${
+              className={`flex items-center rounded-full px-3 py-1 transition-all duration-300 ease-in-out ${
                 activeSection === item.href.replace("#", "")
                   ? "bg-blue-600 text-white"
                   : "text-gray-700 hover:bg-blue-600 hover:text-white"
@@ -83,17 +83,22 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
             </a>
           ))}
 
-          <select
-            onChange={handleProfileChange}
-            value={currentProfile}
-            className="px-2 py-1 bg-white/60 rounded-full text-sm text-gray-800 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-          >
+          {/* Profile Toggle - Fixed to match the UI/UX */}
+          <div className="flex items-center bg-white/60 rounded-full px-1 py-1 border border-white/20">
             {profiles.map((profile) => (
-              <option key={profile.value} value={profile.value}>
+              <button
+                key={profile.value}
+                onClick={() => router.push(`/${profile.value}`)}
+                className={`px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 ease-in-out ${
+                  currentProfile === profile.value
+                    ? "bg-blue-600 text-white"
+                    : "text-gray-700 hover:bg-blue-100"
+                }`}
+              >
                 {profile.label}
-              </option>
+              </button>
             ))}
-          </select>
+          </div>
         </div>
 
         {/* Mobile Dropdown Menu */}
@@ -112,7 +117,7 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
                 className={`px-4 py-2 flex items-center transition-all duration-300 ${
                   activeSection === item.href.replace("#", "")
                     ? "bg-blue-600 text-white"
-                    : "text-gray-700"
+                    : "text-gray-700 hover:bg-blue-100"
                 }`}
               >
                 <Icon icon={item.icon} className="h-4 w-4 mr-2" />
@@ -120,21 +125,28 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
               </a>
             ))}
           </div>
-          <div className="border-t border-gray-300 mt-1 pt-2 px-4">
+          <div className="border-t border-white/20 mt-1 pt-2 px-4">
             <label className="block text-sm font-medium text-gray-800 mb-1">
               Profile:
             </label>
-            <select
-              onChange={handleProfileChange}
-              value={currentProfile}
-              className="w-full px-2 py-1 rounded-md border bg-white/80 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
+            <div className="flex gap-1 bg-white/80 rounded-full p-1 border border-white/20">
               {profiles.map((profile) => (
-                <option key={profile.value} value={profile.value}>
+                <button
+                  key={profile.value}
+                  onClick={() => {
+                    router.push(`/${profile.value}`);
+                    setIsOpen(false);
+                  }}
+                  className={`flex-1 px-2 py-1 rounded-full text-sm font-medium transition-all duration-300 ${
+                    currentProfile === profile.value
+                      ? "bg-blue-600 text-white"
+                      : "text-gray-700 hover:bg-blue-100"
+                  }`}
+                >
                   {profile.label}
-                </option>
+                </button>
               ))}
-            </select>
+            </div>
           </div>
         </div>
       </div>
