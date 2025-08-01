@@ -1,23 +1,7 @@
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
-import Knowledge from "@/components/Knowledge"
-import Hero from "@/components/Hero"
-import Navbar from "@/components/Navbar"
-import Projects from "@/components/Projects"
+import { redirect } from "next/navigation";
 
-const page = () => {
-	return (
-		<>
-			<Navbar />
-			<main className="container mx-auto max-w-6xl px-4">
-				<Hero />
-				<Knowledge />
-				<Projects />
-				<Contact />
-			</main>
-			<Footer />
-		</>
-	)
-}
+const Page = () => {
+	redirect("/fullstack");
+};
 
-export default page
+export default Page;
