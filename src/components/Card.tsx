@@ -1,4 +1,4 @@
-//import Image from 'next/image';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   name: string;
@@ -14,7 +14,7 @@ const ProjectCard = ({ name, img, description, tech, githubUrl, demoUrl }: Proje
     <div className="bg-zinc-50 rounded-se-2xl rounded-es-2xl shadow-md hover:shadow-lg transition-shadow duration-300 flex overflow-hidden">
       {/* Image Section */}
       <div className="w-1/3">
-        <img
+        <Image
           src={img}
           alt={name}
           className="h-full w-full object-cover"

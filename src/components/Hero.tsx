@@ -1,5 +1,6 @@
 "use client";
 import { Icon } from '@iconify-icon/react';
+import Image from 'next/image';
 
 interface HeroProps {
   heroData: {
@@ -59,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ heroData }) => {
 
         <div className="relative">
           <div className="aspect-square overflow-hidden rounded-full border-4 border-gray-100 shadow-xl">
-            <img 
+            <Image 
               src="perfil_of_og.jpg" 
               alt="Eduardo's profile" 
               className="w-full h-full object-cover"

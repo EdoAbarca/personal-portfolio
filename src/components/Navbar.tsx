@@ -24,13 +24,6 @@ const Navbar = ({ currentProfile }: NavbarProps) => {
   const [activeSection, setActiveSection] = useState('');
   const router = useRouter();
 
-  const handleProfileChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selected = e.target.value;
-    if (selected !== currentProfile) {
-      router.push(`/${selected}`);
-    }
-  };
-
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const handleScroll = () => {
