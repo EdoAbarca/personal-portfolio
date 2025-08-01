@@ -6,5 +6,5 @@ export const fullstackHero ={
         { label: "Current formal development experience", value: "1 year" },
         { label: "Projects Completed", value: "30+" }
     ],
-    linktoCV: "/EduardoAbarcaCV.pdf",
+    linktoCV: "/fullstack/EduardoAbarca_CV_ATS_FULLSTACK.pdf",
 }

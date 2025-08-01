@@ -6,5 +6,5 @@ export const devopsHero ={
         { label: "Current formal DevOps experience", value: "Entry level" },
         { label: "Projects Completed", value: "10+" }
     ],
-    linktoCV: "/EduardoAbarca_CVDevOps.pdf",
+    linktoCV: "/devops/EduardoAbarca_CV_ATS_DEVOPS.pdf",
 }
