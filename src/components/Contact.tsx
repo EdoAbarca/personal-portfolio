@@ -17,7 +17,7 @@ const Contact = () => {
       width: 36,
       height: 36,
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/eduardo-abarca-chavez-01374a324/",
+      url: "https://www.linkedin.com/in/eduardoabarcachavez/",
       bgColor: "bg-blue-100",
       hoverColor: "hover:bg-blue-200",
       textColor: "text-blue-700",

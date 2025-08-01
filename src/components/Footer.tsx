@@ -12,7 +12,7 @@ const Footer = () => {
   
     const socialLinks = [
       { name: 'GitHub', url: 'https://github.com/EdoAbarca' },
-      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/eduardo-abarca-chavez-01374a324/' },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/eduardoabarcachavez/' },
       { name: 'Gmail', url: "https://mail.google.com/mail/?view=cm&fs=1&to=eduardo.abarca.c@usach.cl", },
 			{ name: 'WhatsApp', url: 'https://wa.me/+56953118991'}
     ];
@@ -48,7 +48,7 @@ const Footer = () => {
   
             {/* Social links section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-white">Connect</h3>
+              <h3 className="text-xl font-semibold text-white">Let&apos;s connect</h3>
               <nav className="space-y-2">
                 {socialLinks.map((link, index) => (
                   <a
